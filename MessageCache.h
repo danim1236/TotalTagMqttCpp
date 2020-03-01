@@ -8,6 +8,8 @@
 
 #include <string>
 #include <vector>
+#include <queue>
+#include <mutex>
 
 using namespace std;
 
@@ -20,8 +22,13 @@ public:
     void AppendMessage(string message);
     int GetMessageCount();
 
+    vector<string> GetNextMessages();
     vector<string> GetNextMessages(int count);
     string GetNextMessage();
+
+private:
+    queue<string> _cache;
+    mutex _mutex;
 };
 
 

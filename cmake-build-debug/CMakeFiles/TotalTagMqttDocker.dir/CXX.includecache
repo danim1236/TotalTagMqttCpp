@@ -20,11 +20,23 @@ TagInfo.h
 TotalTagSender.h
 /home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h
 
+/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp
+MessageCache.h
+/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
+
 /home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
 string
 -
 vector
 -
+queue
+-
+mutex
+-
+
+/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp
+MqttClient.h
+/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
 
 /home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
 string
