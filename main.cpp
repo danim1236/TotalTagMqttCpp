@@ -87,7 +87,7 @@ int main()
         if (messageCache.GetCount() > 0) {
             TagInfo tagInfo = messageCache.GetNext();
 
-            cout << tagInfo.Epc << ' ' << tagInfo.AntennaPort << ' ' << tagInfo.Rssi << endl;
+            cout << tagInfo.DateTime << ' ' << tagInfo.Epc << ' ' << tagInfo.AntennaPort << ' ' << tagInfo.Rssi << endl;
         }
     }
 

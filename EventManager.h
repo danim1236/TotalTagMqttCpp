@@ -7,6 +7,8 @@
 
 
 #include <vector>
+#include <map>
+#include <utility>
 
 #include "TagInfo.h"
 #include "TagInfoCache.h"
@@ -22,6 +24,7 @@ public:
 
 private:
     TagInfoCache& _messageCache;
+    map<string, pair<int, time_t > > _tagInfoMap;
 };
 
 
