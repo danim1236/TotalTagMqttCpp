@@ -123,6 +123,87 @@ TotalTagMqttDocker/fast:
 	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/build
 .PHONY : TotalTagMqttDocker/fast
 
+MessageCache.o: MessageCache.cpp.o
+
+.PHONY : MessageCache.o
+
+# target to build an object file
+MessageCache.cpp.o:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o
+.PHONY : MessageCache.cpp.o
+
+MessageCache.i: MessageCache.cpp.i
+
+.PHONY : MessageCache.i
+
+# target to preprocess a source file
+MessageCache.cpp.i:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.i
+.PHONY : MessageCache.cpp.i
+
+MessageCache.s: MessageCache.cpp.s
+
+.PHONY : MessageCache.s
+
+# target to generate assembly for a file
+MessageCache.cpp.s:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.s
+.PHONY : MessageCache.cpp.s
+
+MessageParser.o: MessageParser.cpp.o
+
+.PHONY : MessageParser.o
+
+# target to build an object file
+MessageParser.cpp.o:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o
+.PHONY : MessageParser.cpp.o
+
+MessageParser.i: MessageParser.cpp.i
+
+.PHONY : MessageParser.i
+
+# target to preprocess a source file
+MessageParser.cpp.i:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.i
+.PHONY : MessageParser.cpp.i
+
+MessageParser.s: MessageParser.cpp.s
+
+.PHONY : MessageParser.s
+
+# target to generate assembly for a file
+MessageParser.cpp.s:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.s
+.PHONY : MessageParser.cpp.s
+
+MqttClient.o: MqttClient.cpp.o
+
+.PHONY : MqttClient.o
+
+# target to build an object file
+MqttClient.cpp.o:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o
+.PHONY : MqttClient.cpp.o
+
+MqttClient.i: MqttClient.cpp.i
+
+.PHONY : MqttClient.i
+
+# target to preprocess a source file
+MqttClient.cpp.i:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.i
+.PHONY : MqttClient.cpp.i
+
+MqttClient.s: MqttClient.cpp.s
+
+.PHONY : MqttClient.s
+
+# target to generate assembly for a file
+MqttClient.cpp.s:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.s
+.PHONY : MqttClient.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TotalTagMqttDocker"
 	@echo "... edit_cache"
+	@echo "... MessageCache.o"
+	@echo "... MessageCache.i"
+	@echo "... MessageCache.s"
+	@echo "... MessageParser.o"
+	@echo "... MessageParser.i"
+	@echo "... MessageParser.s"
+	@echo "... MqttClient.o"
+	@echo "... MqttClient.i"
+	@echo "... MqttClient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
