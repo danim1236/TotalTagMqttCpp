@@ -18,6 +18,15 @@ struct Config
     string BrokerUrl;
     string ClientId;
     string Topic;
+
+
+    Config()
+    {
+//        MiddlewareUrl = "http//broker.hivemq.com";
+//        ReaderId = 0;
+//        BrokerUrl = "http//broker.hivemq.com";
+//        ClientId = "TOTALTAG";
+    }
 };
 
 

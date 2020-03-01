@@ -1,0 +1,2 @@
+BrokerUrl:http://broker.hivemq.com
+ClientId:TOTALTAG

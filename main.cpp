@@ -19,6 +19,15 @@ int main()
 
     if(fp == nullptr)
     {
+        fp = fopen("./config.txt", "w");
+
+        fputs("BrokerUrl:http://broker.hivemq.com\n", fp);
+        fputs("ClientId:TOTALTAG\n", fp);
+        fclose(fp);
+    }
+
+    fp = fopen("./config.txt", "r");
+    if ( fp == nullptr) {
         return 1;
     }
 
@@ -27,13 +36,16 @@ int main()
         fgets(buffer, 1024, fp);
         if (strlen(buffer) > 0) {
             string line(buffer);
+            if (line.c_str()[line.length() - 1] == '\n') {
+                line = line.substr(0, line.length() - 1);
+            }
             size_t pos = line.find_first_of(":");
             if(pos != string::npos && pos < line.length() - 1 && pos > 0) {
                 string key = trim(line.substr(0, pos));
                 string val = trim(line.substr(pos + 1));
 
                 for (int i = 0; i < sizeof(options) / sizeof(string); ++i) {
-                    if (key == line) {
+                    if (key == options[i]) {
                         switch (i) {
                             case 1:
                                 config.MiddlewareUrl = val;
@@ -60,6 +72,7 @@ int main()
             }
         }
     }
+    fclose(fp);
 
     TotalTagSender sender(config.MiddlewareUrl, config.ReaderId);
     EventManager eventManager(sender);
@@ -76,7 +89,6 @@ int main()
 
             cout << message;
         }
-
     }
 
     mqttClient.Stop();
