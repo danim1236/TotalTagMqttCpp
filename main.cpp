@@ -21,8 +21,9 @@ int main()
     {
         fp = fopen("./config.txt", "w");
 
-        fputs("BrokerUrl:http://broker.hivemq.com\n", fp);
+        fputs("BrokerUrl:broker.hivemq.com\n", fp);
         fputs("ClientId:TOTALTAG\n", fp);
+        fputs("Topic:EZR2500_240AC4055EE0\n", fp);
         fclose(fp);
     }
 

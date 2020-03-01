@@ -1,2 +1,3 @@
-BrokerUrl:http://broker.hivemq.com
+BrokerUrl:broker.hivemq.com
 ClientId:TOTALTAG
+Topic:EZR2500_240AC4055EE0

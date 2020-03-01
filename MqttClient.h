@@ -8,6 +8,8 @@
 #include <string>
 #include <vector>
 
+#include <MQTTClient.h>
+
 #include "MessageCache.h"
 
 using namespace std;
@@ -28,6 +30,12 @@ private:
     string _clientId;
     vector<string> _topics;
     MessageCache& _messageCache;
+
+    MQTTClient _client;
+
+    static MqttClient *Instance;
+
+    static int OnMessage(void *context, char *topicName, int topicLen, MQTTClient_message *message);
 };
 
 #endif //TOTALTAGMQTTDOCKER_MQTTCLIENT_H
