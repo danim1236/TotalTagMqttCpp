@@ -9,7 +9,8 @@
 EventManager::EventManager(TagInfoCache& messageCache)
 :
 _messageCache(messageCache),
-_tagInfoMap(map<string, pair<int, time_t > >())
+_tagInfoMap(map<string, vector<TagInfo> >()),
+_antennaPortMap(map<string, int>())
 {
 }
 
@@ -26,26 +27,43 @@ void EventManager::AddTagInfo(vector<TagInfo> &tagInfos)
 
 void EventManager::AddTagInfo(TagInfo &tagInfo)
 {
-    auto forward = true;
-
-
     auto key = tagInfo.Epc;
-//    auto key = make_pair(tagInfo.Epc, tagInfo.AntennaPort);
-
-    if (_tagInfoMap.count(key) == 1) {
-        auto ad = _tagInfoMap[key];
-        bool sameAntenna = tagInfo.AntennaPort == ad.first;
-        if (sameAntenna) {
-            auto df = difftime(tagInfo.DateTime, ad.second);
-            if (df < 2) {
-                forward = false;
-            }
+    
+    if (_tagInfoMap.count(key) == 0) {
+        vector<TagInfo> v;
+        v.reserve(100);
+        _tagInfoMap[key] = v;
+    } else {
+        vector<TagInfo>& v(_tagInfoMap[key]);
+        if (v.size() >= 100) {
+            v.erase(v.begin());
         }
     }
 
-    _tagInfoMap[key] = make_pair(tagInfo.AntennaPort, tagInfo.DateTime);
+    vector<TagInfo>& values(_tagInfoMap[key]);
+    values.push_back(tagInfo);
+
+    auto now = system_clock::now();
+    auto oldest = now - std::chrono::milliseconds(500);
+
+    double foundRssi = tagInfo.Rssi;
+    int antennaPort = tagInfo.AntennaPort;
+
+    for (auto v = values.end() - 1; v >= values.begin(); --v) {
+        TagInfo &info(*v);
+        if (info.DateTime < oldest) {
+            break;
+        }
+        if (info.Rssi > foundRssi) {
+            foundRssi = info.Rssi;
+            antennaPort = info.AntennaPort;
+        }
+    }
+
+    auto forward = _antennaPortMap.count(key) == 0 || _antennaPortMap[key] != antennaPort;
 
     if (forward) {
+        _antennaPortMap[key] = antennaPort;
         _messageCache.Append(tagInfo);
     }
 }

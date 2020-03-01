@@ -10,11 +10,12 @@
 #include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
 struct TagInfo
 {
     bool Ok;
-    time_t DateTime;
+    time_point<system_clock> DateTime;
     string Epc;
     int AntennaPort;
     double Rssi;
@@ -23,7 +24,7 @@ struct TagInfo
     TagInfo(string& epc, int antennaPort, double rssi, double phase)
     :
     Ok(true),
-    DateTime(std::chrono::system_clock::to_time_t(std::chrono::system_clock::now())),
+    DateTime(system_clock::now()),
     Epc(epc),
     AntennaPort(antennaPort),
     Rssi(rssi),
@@ -41,6 +42,11 @@ struct TagInfo
     :
     Ok(false)
     {
+    }
+
+    time_t GetDateTime()
+    {
+        return system_clock::to_time_t(DateTime);
     }
 };
 

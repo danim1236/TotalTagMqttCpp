@@ -24,7 +24,8 @@ public:
 
 private:
     TagInfoCache& _messageCache;
-    map<string, pair<int, time_t > > _tagInfoMap;
+    map<string, vector<TagInfo> > _tagInfoMap;
+    map<string, int> _antennaPortMap;
 };
 
 
