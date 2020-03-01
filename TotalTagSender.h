@@ -14,11 +14,15 @@ using namespace std;
 class TotalTagSender
 {
 public:
-    TotalTagSender(string url, int readerId);
+    TotalTagSender(string& url, int readerId);
     ~TotalTagSender();
 
-    void AddReadTag(TagInfo tagInfo);
-    void AddReadTag(vector<TagInfo> tagInfos);
+    void AddReadTag(TagInfo& tagInfo);
+    void AddReadTag(vector<TagInfo>& tagInfos);
+
+private:
+    string _url;
+    int _readerId;
 };
 
 

@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
+string
+-
+vector
+-
+
+/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp
+MqttClient.h
+/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
+
+/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
+string
+-
+vector
+-
+MessageCache.h
+/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
+

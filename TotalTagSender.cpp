@@ -3,3 +3,15 @@
 //
 
 #include "TotalTagSender.h"
+
+TotalTagSender::TotalTagSender(string& url, int readerId)
+:
+_url(url),
+_readerId(readerId)
+{
+
+}
+
+TotalTagSender::~TotalTagSender()
+{
+}

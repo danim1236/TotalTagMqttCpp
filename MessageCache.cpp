@@ -3,3 +3,19 @@
 //
 
 #include "MessageCache.h"
+
+MessageCache::MessageCache() {
+
+}
+
+MessageCache::~MessageCache() {
+
+}
+
+int MessageCache::GetMessageCount() {
+    return 0;
+}
+
+string MessageCache::GetNextMessage() {
+    return string();
+}

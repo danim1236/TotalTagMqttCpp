@@ -19,6 +19,9 @@ public:
 
     void AddTagInfo(TagInfo& tagInfo);
     void AddTagInfo(vector<TagInfo>& tagInfos);
+
+private:
+    TotalTagSender _sender;
 };
 
 

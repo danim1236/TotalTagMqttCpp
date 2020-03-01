@@ -3,3 +3,13 @@
 //
 
 #include "EventManager.h"
+
+EventManager::EventManager(TotalTagSender &sender)
+:
+_sender(sender)
+{
+}
+
+EventManager::~EventManager()
+{
+}

@@ -15,17 +15,19 @@ using namespace std;
 class MqttClient
 {
 public:
-    MqttClient(string clientId, vector<string> topics);
-    MqttClient(string clientId, string topic);
+    MqttClient(string& brokerUrl, string& clientId, vector<string>& topics, MessageCache& messageCache);
+    MqttClient(string& brokerUrl, string& clientId, string& topic, MessageCache& messageCache);
 
     ~MqttClient();
 
     bool Start();
     bool Stop();
 
-    string GetNextMessage();
-
-    void SetMessageCache(MessageCache messageCache);
+private:
+    string _brokerUrl;
+    string _clientId;
+    vector<string> _topics;
+    MessageCache& _messageCache;
 };
 
 #endif //TOTALTAGMQTTDOCKER_MQTTCLIENT_H
