@@ -2,17 +2,17 @@
 // Created by danim on 01/03/2020.
 //
 
-#include "MessageCache.h"
+#include "TagInfoCache.h"
 
-MessageCache::MessageCache() {
-
+TagInfoCache::TagInfoCache()
+{
 }
 
-MessageCache::~MessageCache() {
-
+TagInfoCache::~TagInfoCache()
+{
 }
 
-int MessageCache::GetMessageCount()
+int TagInfoCache::GetCount()
 {
     unique_lock<std::mutex> mlock(_mutex);
     int size =_cache.size();
@@ -21,26 +21,26 @@ int MessageCache::GetMessageCount()
     return size;
 }
 
-string MessageCache::GetNextMessage()
+TagInfo TagInfoCache::GetNext()
 {
     unique_lock<std::mutex> mlock(_mutex);
-    string message(_cache.front());
+    TagInfo tagInfo(_cache.front());
     _cache.pop();
     mlock.unlock();
 
-    return message;
+    return tagInfo;
 }
 
-void MessageCache::AppendMessage(string message)
+void TagInfoCache::Append(TagInfo tagInfo)
 {
     unique_lock<std::mutex> mlock(_mutex);
-    _cache.push(string(message));
+    _cache.push(TagInfo(tagInfo));
     mlock.unlock();
 }
 
-vector<string> MessageCache::GetNextMessages(int count)
+vector<TagInfo> TagInfoCache::GetNexts(int count)
 {
-    vector<string> ret(count);
+    vector<TagInfo> ret(count);
 
     unique_lock<std::mutex> mlock(_mutex);
 
@@ -53,7 +53,7 @@ vector<string> MessageCache::GetNextMessages(int count)
     return ret;
 }
 
-vector<string> MessageCache::GetNextMessages()
+vector<TagInfo> TagInfoCache::GetNexts()
 {
-    return GetNextMessages(GetMessageCount());
+    return GetNexts(GetCount());
 }

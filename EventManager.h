@@ -9,19 +9,19 @@
 #include <vector>
 
 #include "TagInfo.h"
-#include "TotalTagSender.h"
+#include "TagInfoCache.h"
 
 class EventManager
 {
 public:
-    EventManager(TotalTagSender& sender);
+    EventManager(TagInfoCache& messageCache);
     ~EventManager();
 
     void AddTagInfo(TagInfo& tagInfo);
     void AddTagInfo(vector<TagInfo>& tagInfos);
 
 private:
-    TotalTagSender _sender;
+    TagInfoCache& _messageCache;
 };
 
 

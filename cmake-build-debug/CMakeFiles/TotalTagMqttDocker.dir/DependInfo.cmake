@@ -5,10 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o"
-  "/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o"
   "/home/danim/CLionProjects/TotalTagMqttDocker/MessageParser.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o"
   "/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o"
+  "/home/danim/CLionProjects/TotalTagMqttDocker/TagInfoCache.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/TagInfoCache.cpp.o"
   "/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o"
+  "/home/danim/CLionProjects/TotalTagMqttDocker/Util.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/Util.cpp.o"
   "/home/danim/CLionProjects/TotalTagMqttDocker/main.cpp" "/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

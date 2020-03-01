@@ -5,7 +5,7 @@
 #include "Util.h"
 #include "TotalTagSender.h"
 #include "EventManager.h"
-#include "MessageCache.h"
+#include "TagInfoCache.h"
 #include "MqttClient.h"
 
 int main()
@@ -76,19 +76,18 @@ int main()
     fclose(fp);
 
     TotalTagSender sender(config.MiddlewareUrl, config.ReaderId);
-    EventManager eventManager(sender);
 
-    MessageCache messageCache;
+    TagInfoCache messageCache;
     MqttClient mqttClient(config.BrokerUrl, config.ClientId, config.Topic, messageCache);
 
     mqttClient.Start();
 
     while (true)
     {
-        if (messageCache.GetMessageCount() > 0) {
-            string message(messageCache.GetNextMessage());
+        if (messageCache.GetCount() > 0) {
+            TagInfo tagInfo = messageCache.GetNext();
 
-            cout << message;
+            cout << tagInfo.Epc << ' ' << tagInfo.AntennaPort << ' ' << tagInfo.Rssi << endl;
         }
     }
 

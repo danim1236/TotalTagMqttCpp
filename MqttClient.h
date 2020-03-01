@@ -10,15 +10,17 @@
 
 #include <MQTTClient.h>
 
-#include "MessageCache.h"
+#include "TagInfoCache.h"
+#include "MessageParser.h"
+#include "EventManager.h"
 
 using namespace std;
 
 class MqttClient
 {
 public:
-    MqttClient(string& brokerUrl, string& clientId, vector<string>& topics, MessageCache& messageCache);
-    MqttClient(string& brokerUrl, string& clientId, string& topic, MessageCache& messageCache);
+    MqttClient(string& brokerUrl, string& clientId, vector<string>& topics, TagInfoCache& messageCache);
+    MqttClient(string& brokerUrl, string& clientId, string& topic, TagInfoCache& messageCache);
 
     ~MqttClient();
 
@@ -29,13 +31,17 @@ private:
     string _brokerUrl;
     string _clientId;
     vector<string> _topics;
-    MessageCache& _messageCache;
+    MessageParser _messageParser;
+    EventManager _eventManager;
+    TagInfoCache& _messageCache;
 
     MQTTClient _client;
 
     static MqttClient *Instance;
 
     static int OnMessage(void *context, char *topicName, int topicLen, MQTTClient_message *message);
+
+    vector<string> BuildTopics(string &basicString);
 };
 
 #endif //TOTALTAGMQTTDOCKER_MQTTCLIENT_H

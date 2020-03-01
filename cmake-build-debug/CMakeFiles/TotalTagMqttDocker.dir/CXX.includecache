@@ -6,39 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/danim/CLionProjects/TotalTagMqttDocker/Config.h
-string
--
-bits/unique_ptr.h
--
+/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp
+EventManager.h
+/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.h
 
 /home/danim/CLionProjects/TotalTagMqttDocker/EventManager.h
 vector
 -
 TagInfo.h
 /home/danim/CLionProjects/TotalTagMqttDocker/TagInfo.h
-TotalTagSender.h
-/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h
-
-/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
-string
--
-vector
--
-queue
--
-mutex
--
-
-/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
-string
--
-vector
--
-MQTTClient.h
--
-MessageCache.h
-/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
+TagInfoCache.h
+/home/danim/CLionProjects/TotalTagMqttDocker/TagInfoCache.h
 
 /home/danim/CLionProjects/TotalTagMqttDocker/TagInfo.h
 string
@@ -48,33 +26,13 @@ ctime
 chrono
 -
 
-/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h
-string
--
+/home/danim/CLionProjects/TotalTagMqttDocker/TagInfoCache.h
 vector
+-
+queue
+-
+mutex
 -
 TagInfo.h
 /home/danim/CLionProjects/TotalTagMqttDocker/TagInfo.h
-
-/home/danim/CLionProjects/TotalTagMqttDocker/Util.h
-string
--
-
-/home/danim/CLionProjects/TotalTagMqttDocker/main.cpp
-iostream
--
-cstring
--
-Config.h
-/home/danim/CLionProjects/TotalTagMqttDocker/Config.h
-Util.h
-/home/danim/CLionProjects/TotalTagMqttDocker/Util.h
-TotalTagSender.h
-/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h
-EventManager.h
-/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.h
-MessageCache.h
-/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h
-MqttClient.h
-/home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.h
 

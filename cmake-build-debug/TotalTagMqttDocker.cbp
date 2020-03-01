@@ -93,12 +93,6 @@
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.h">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
-		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp">
-			<Option target="TotalTagMqttDocker"/>
-		</Unit>
-		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.h">
-			<Option target="TotalTagMqttDocker"/>
-		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/MessageParser.cpp">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
@@ -114,10 +108,19 @@
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TagInfo.h">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TagInfoCache.cpp">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TagInfoCache.h">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/Util.cpp">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/Util.h">

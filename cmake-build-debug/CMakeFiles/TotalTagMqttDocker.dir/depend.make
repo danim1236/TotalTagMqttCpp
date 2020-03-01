@@ -4,28 +4,37 @@
 CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../EventManager.cpp
 CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../EventManager.h
 CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../TagInfo.h
-CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../TotalTagSender.h
-
-CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o: ../MessageCache.cpp
-CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o: ../MessageCache.h
+CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../TagInfoCache.h
 
 CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: ../MessageParser.cpp
 CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: ../MessageParser.h
 CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: ../TagInfo.h
+CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: ../Util.h
 
-CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../MessageCache.h
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../EventManager.h
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../MessageParser.h
 CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../MqttClient.cpp
 CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../MqttClient.h
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../TagInfo.h
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../TagInfoCache.h
+
+CMakeFiles/TotalTagMqttDocker.dir/TagInfoCache.cpp.o: ../TagInfo.h
+CMakeFiles/TotalTagMqttDocker.dir/TagInfoCache.cpp.o: ../TagInfoCache.cpp
+CMakeFiles/TotalTagMqttDocker.dir/TagInfoCache.cpp.o: ../TagInfoCache.h
 
 CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o: ../TagInfo.h
 CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o: ../TotalTagSender.cpp
 CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o: ../TotalTagSender.h
 
+CMakeFiles/TotalTagMqttDocker.dir/Util.cpp.o: ../Util.cpp
+CMakeFiles/TotalTagMqttDocker.dir/Util.cpp.o: ../Util.h
+
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../Config.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../EventManager.h
-CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../MessageCache.h
+CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../MessageParser.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../MqttClient.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../TagInfo.h
+CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../TagInfoCache.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../TotalTagSender.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../Util.h
 CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o: ../main.cpp

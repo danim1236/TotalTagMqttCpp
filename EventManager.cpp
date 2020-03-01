@@ -4,12 +4,26 @@
 
 #include "EventManager.h"
 
-EventManager::EventManager(TotalTagSender &sender)
+EventManager::EventManager(TagInfoCache& messageCache)
 :
-_sender(sender)
+_messageCache(messageCache)
 {
 }
 
 EventManager::~EventManager()
 {
 }
+
+void EventManager::AddTagInfo(vector<TagInfo> &tagInfos)
+{
+    for (int i = 0; i < tagInfos.size(); ++i) {
+        AddTagInfo(tagInfos[i]);
+    }
+}
+
+void EventManager::AddTagInfo(TagInfo &tagInfo)
+{
+    _messageCache.Append(tagInfo);
+}
+
+

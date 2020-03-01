@@ -6,24 +6,29 @@
 
 MqttClient *MqttClient::Instance = nullptr;
 
-MqttClient::MqttClient(string& brokerUrl, string& clientId, vector<string>& topics, MessageCache &messageCache)
+MqttClient::MqttClient(string& brokerUrl, string& clientId, vector<string>& topics, TagInfoCache& messageCache)
 :
 _brokerUrl(brokerUrl),
 _clientId(clientId),
 _topics(topics),
+_messageParser(),
+_eventManager(messageCache),
 _messageCache(messageCache)
 {
     Instance = this;
 }
 
-MqttClient::MqttClient(string& brokerUrl, string& clientId, string& topic, MessageCache &messageCache)
-:_brokerUrl(brokerUrl),
+MqttClient::MqttClient(string& brokerUrl, string& clientId, string& topic, TagInfoCache& messageCache)
+:
+_brokerUrl(brokerUrl),
 _clientId(clientId),
-_topics(),
+_topics(vector<string>()),
+_messageParser(),
+_eventManager(messageCache),
 _messageCache(messageCache)
 {
     Instance = this;
-    _topics.push_back(string(topic));
+    _topics.push_back(topic);
 }
 
 MqttClient::~MqttClient()
@@ -64,11 +69,21 @@ int MqttClient::OnMessage(void *context, char *topicName, int topicLen, MQTTClie
 
     for (int i = 0; i < Instance->_topics.size(); ++i) {
         if(Instance->_topics[i] == topicName) {
-            Instance->_messageCache.AppendMessage(string(payload));
+            TagInfo tagInfo = Instance->_messageParser.ParseMessage(string(payload));
+            if (tagInfo.Ok) {
+                Instance->_eventManager.AddTagInfo(tagInfo);
+            }
         }
     }
 
     MQTTClient_freeMessage(&message);
     MQTTClient_free(topicName);
     return 1;
+}
+
+vector<string> MqttClient::BuildTopics(string &topic)
+{
+    vector<string> topics(1);
+    topics.push_back(topic);
+    return topics;
 }
