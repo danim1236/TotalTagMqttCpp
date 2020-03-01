@@ -70,17 +70,92 @@ CMakeFiles/TotalTagMqttDocker.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/main.cpp -o CMakeFiles/TotalTagMqttDocker.dir/main.cpp.s
 
+CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o: CMakeFiles/TotalTagMqttDocker.dir/flags.make
+CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o: ../MessageCache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o -c /home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp
+
+CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp > CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.i
+
+CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp -o CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.s
+
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: CMakeFiles/TotalTagMqttDocker.dir/flags.make
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o: ../MqttClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o -c /home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp
+
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp > CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.i
+
+CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/MqttClient.cpp -o CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.s
+
+CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: CMakeFiles/TotalTagMqttDocker.dir/flags.make
+CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o: ../MessageParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o -c /home/danim/CLionProjects/TotalTagMqttDocker/MessageParser.cpp
+
+CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danim/CLionProjects/TotalTagMqttDocker/MessageParser.cpp > CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.i
+
+CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/MessageParser.cpp -o CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.s
+
+CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: CMakeFiles/TotalTagMqttDocker.dir/flags.make
+CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o: ../EventManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o -c /home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp
+
+CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp > CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.i
+
+CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp -o CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.s
+
+CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o: CMakeFiles/TotalTagMqttDocker.dir/flags.make
+CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o: ../TotalTagSender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o -c /home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp
+
+CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp > CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.i
+
+CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp -o CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.s
+
 # Object files for target TotalTagMqttDocker
 TotalTagMqttDocker_OBJECTS = \
-"CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o"
+"CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o" \
+"CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o" \
+"CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o" \
+"CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o" \
+"CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o" \
+"CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o"
 
 # External object files for target TotalTagMqttDocker
 TotalTagMqttDocker_EXTERNAL_OBJECTS =
 
 TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o
+TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o
+TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o
+TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o
+TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o
+TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o
 TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/build.make
 TotalTagMqttDocker: CMakeFiles/TotalTagMqttDocker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TotalTagMqttDocker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TotalTagMqttDocker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TotalTagMqttDocker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

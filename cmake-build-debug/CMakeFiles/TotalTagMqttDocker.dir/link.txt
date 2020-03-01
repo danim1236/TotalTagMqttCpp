@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o  -o TotalTagMqttDocker 
+/usr/bin/c++  -g   CMakeFiles/TotalTagMqttDocker.dir/main.cpp.o CMakeFiles/TotalTagMqttDocker.dir/MessageCache.cpp.o CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.o CMakeFiles/TotalTagMqttDocker.dir/MessageParser.cpp.o CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o  -o TotalTagMqttDocker 

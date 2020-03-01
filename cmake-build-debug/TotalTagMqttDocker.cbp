@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.cpp">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/EventManager.h">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/MessageCache.cpp">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
@@ -103,6 +109,12 @@
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TagInfo.h">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.cpp">
+			<Option target="TotalTagMqttDocker"/>
+		</Unit>
+		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/TotalTagSender.h">
 			<Option target="TotalTagMqttDocker"/>
 		</Unit>
 		<Unit filename="/home/danim/CLionProjects/TotalTagMqttDocker/main.cpp">

@@ -123,6 +123,33 @@ TotalTagMqttDocker/fast:
 	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/build
 .PHONY : TotalTagMqttDocker/fast
 
+EventManager.o: EventManager.cpp.o
+
+.PHONY : EventManager.o
+
+# target to build an object file
+EventManager.cpp.o:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.o
+.PHONY : EventManager.cpp.o
+
+EventManager.i: EventManager.cpp.i
+
+.PHONY : EventManager.i
+
+# target to preprocess a source file
+EventManager.cpp.i:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.i
+.PHONY : EventManager.cpp.i
+
+EventManager.s: EventManager.cpp.s
+
+.PHONY : EventManager.s
+
+# target to generate assembly for a file
+EventManager.cpp.s:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/EventManager.cpp.s
+.PHONY : EventManager.cpp.s
+
 MessageCache.o: MessageCache.cpp.o
 
 .PHONY : MessageCache.o
@@ -204,6 +231,33 @@ MqttClient.cpp.s:
 	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/MqttClient.cpp.s
 .PHONY : MqttClient.cpp.s
 
+TotalTagSender.o: TotalTagSender.cpp.o
+
+.PHONY : TotalTagSender.o
+
+# target to build an object file
+TotalTagSender.cpp.o:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.o
+.PHONY : TotalTagSender.cpp.o
+
+TotalTagSender.i: TotalTagSender.cpp.i
+
+.PHONY : TotalTagSender.i
+
+# target to preprocess a source file
+TotalTagSender.cpp.i:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.i
+.PHONY : TotalTagSender.cpp.i
+
+TotalTagSender.s: TotalTagSender.cpp.s
+
+.PHONY : TotalTagSender.s
+
+# target to generate assembly for a file
+TotalTagSender.cpp.s:
+	$(MAKE) -f CMakeFiles/TotalTagMqttDocker.dir/build.make CMakeFiles/TotalTagMqttDocker.dir/TotalTagSender.cpp.s
+.PHONY : TotalTagSender.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -240,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TotalTagMqttDocker"
 	@echo "... edit_cache"
+	@echo "... EventManager.o"
+	@echo "... EventManager.i"
+	@echo "... EventManager.s"
 	@echo "... MessageCache.o"
 	@echo "... MessageCache.i"
 	@echo "... MessageCache.s"
@@ -249,6 +306,9 @@ help:
 	@echo "... MqttClient.o"
 	@echo "... MqttClient.i"
 	@echo "... MqttClient.s"
+	@echo "... TotalTagSender.o"
+	@echo "... TotalTagSender.i"
+	@echo "... TotalTagSender.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
