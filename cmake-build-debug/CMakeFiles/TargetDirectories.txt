@@ -1,3 +1,0 @@
-/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/TotalTagMqttDocker.dir
-/home/danim/CLionProjects/TotalTagMqttDocker/cmake-build-debug/CMakeFiles/edit_cache.dir
