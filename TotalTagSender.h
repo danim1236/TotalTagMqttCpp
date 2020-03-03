@@ -17,8 +17,8 @@ public:
     TotalTagSender(string& url, int readerId);
     ~TotalTagSender();
 
-    void AddReadTag(TagInfo& tagInfo);
-    void AddReadTag(vector<TagInfo>& tagInfos);
+    bool AddReadTag(TagInfo& tagInfo);
+    int AddReadTag(vector<TagInfo>& tagInfos);
 
 private:
     string _url;

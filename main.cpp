@@ -21,7 +21,7 @@ int main()
     {
         fp = fopen("./config.txt", "w");
 
-        fputs("MiddlewareUrl:192.168.2.36", fp);
+        fputs("MiddlewareUrl:192.168.2.36\n", fp);
         fputs("BrokerUrl:broker.hivemq.com\n", fp);
         fputs("ClientId:TOTALTAG\n", fp);
         fputs("Topic:EZR2500_240AC4055EE0\n", fp);

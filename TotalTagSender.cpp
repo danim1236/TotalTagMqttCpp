@@ -8,6 +8,7 @@
 #include <ctime>
 #include <chrono>
 #include <time.h>
+#include <iostream>
 
 using namespace std::chrono;
 
@@ -22,7 +23,7 @@ TotalTagSender::~TotalTagSender()
 {
 }
 
-void TotalTagSender::AddReadTag(TagInfo& tagInfo)
+bool TotalTagSender::AddReadTag(TagInfo& tagInfo)
 {
     char dtStr[1024];
 
@@ -30,19 +31,28 @@ void TotalTagSender::AddReadTag(TagInfo& tagInfo)
     tm tm = *localtime(&dateTime);
 
     strftime(dtStr, sizeof(dtStr), "%Y-%m-%dT%H:%M:%S", &tm);
+    string dateTimeStr(dtStr);
 
-    auto r = cpr::Get(cpr::Url{_url},
+    auto r = cpr::Get(cpr::Url{_url + "/AddReadTag"},
                       cpr::Parameters{
                               {"Epc", tagInfo.Epc},
-                              {"AntennaPortNumber", tagInfo.AntennaPort},
-                              {"PeakRssiInDbm", tagInfo.Rssi},
+                              {"AntennaPortNumber", to_string(tagInfo.AntennaPort)},
+                              {"PeakRssiInDbm", to_string(tagInfo.Rssi)},
                               {"ReaderType", "6"},
-                              {"DateTime", dtStr}});
+                              {"DateTime", dateTimeStr}
+    });
+
+    return r.status_code == 200;
 }
 
-void TotalTagSender::AddReadTag(vector<TagInfo>& tagInfos)
+int TotalTagSender::AddReadTag(vector<TagInfo>& tagInfos)
 {
+    auto count = 0;
     for (int i = 0; i < tagInfos.size(); ++i) {
-        AddReadTag(tagInfos[i]);
+        if (AddReadTag(tagInfos[i])) {
+            ++count;
+        }
     }
+
+    return count;
 }
