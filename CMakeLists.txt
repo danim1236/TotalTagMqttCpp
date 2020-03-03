@@ -8,3 +8,7 @@ add_executable(TotalTagMqttDocker main.cpp TagInfoCache.cpp TagInfoCache.h MqttC
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 target_link_libraries(TotalTagMqttDocker Threads::Threads paho-mqtt3c)
+
+add_subdirectory(cpr)
+include_directories(${CPR_INCLUDE_DIRS})
+target_link_libraries(TotalTagMqttDocker ${CPR_LIBRARIES})
