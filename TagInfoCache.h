@@ -25,6 +25,8 @@ public:
     vector<TagInfo> GetNexts();
     vector<TagInfo> GetNexts(int count);
     TagInfo GetNext();
+    TagInfo PeekNext();
+    void DiscardNext();
 
 private:
     queue<TagInfo> _cache;

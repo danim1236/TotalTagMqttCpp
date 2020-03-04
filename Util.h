@@ -17,5 +17,7 @@ string trim(const string& str);
 
 vector<string> Split(string& text);
 
+int msleep(long msec);
+
 
 #endif //TOTALTAGMQTTDOCKER_UTIL_H

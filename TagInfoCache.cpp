@@ -21,6 +21,22 @@ int TagInfoCache::GetCount()
     return size;
 }
 
+TagInfo TagInfoCache::PeekNext()
+{
+    unique_lock<std::mutex> mlock(_mutex);
+    TagInfo tagInfo(_cache.front());
+    mlock.unlock();
+
+    return tagInfo;
+}
+
+void TagInfoCache::DiscardNext()
+{
+    unique_lock<std::mutex> mlock(_mutex);
+    _cache.pop();
+    mlock.unlock();
+}
+
 TagInfo TagInfoCache::GetNext()
 {
     unique_lock<std::mutex> mlock(_mutex);
