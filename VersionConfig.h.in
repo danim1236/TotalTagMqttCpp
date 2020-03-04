@@ -1,0 +1,3 @@
+#define TotalTagMqttDocker_VERSION_MAJOR @TotalTagMqttDocker_VERSION_MAJOR@
+#define TotalTagMqttDocker_VERSION_MINOR @TotalTagMqttDocker_VERSION_MINOR@
+

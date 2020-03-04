@@ -8,9 +8,11 @@
 #include "TagInfoCache.h"
 #include "MqttClient.h"
 #include "TotalTagSenderCache.h"
+#include "VersionConfig.h"
 
 int main()
 {
+    cout << "TotalTagMqttDocker V " << TotalTagMqttDocker_VERSION_MAJOR << '.' << TotalTagMqttDocker_VERSION_MINOR << std::endl;
     string options[] = {"None", "MiddlewareUrl", "ReaderId",
                         "BrokerUrl", "ClientId", "Topic"};
     char buffer[1024];
