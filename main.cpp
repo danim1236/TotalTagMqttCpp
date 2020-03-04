@@ -12,7 +12,7 @@
 
 int main()
 {
-    cout << "TotalTagMqttDocker V " << TotalTagMqttDocker_VERSION_MAJOR << '.' << TotalTagMqttDocker_VERSION_MINOR << std::endl;
+    cout << "TotalTagMqttCpp V " << TotalTagMqttCpp_VERSION_MAJOR << '.' << TotalTagMqttCpp_VERSION_MINOR << std::endl;
     string options[] = {"None", "MiddlewareUrl", "ReaderId",
                         "BrokerUrl", "ClientId", "Topic"};
     char buffer[1024];
